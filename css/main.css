@@ -55,7 +55,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -66,8 +66,8 @@ p {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
   color: var(--main-black-color);
 }
@@ -79,7 +79,6 @@ p {
 .socials__list {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .socials__item {
@@ -165,7 +164,7 @@ p {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 480px) {
   .header__wrap {
     display: none;
   }
@@ -237,7 +236,7 @@ p {
   font-size: 44px;
   line-height: 1.36;
   /* or 136% */
-  width: 696px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -273,12 +272,13 @@ p {
 }
 
 .whywe__list {
-  display: flex;
+  text-align: center;
 }
 
 .whywe__item {
   width: 270px;
   margin-right: 30px;
+  display: inline-block;
 }
 
 .whywe__item::before {
@@ -333,6 +333,12 @@ p {
 }
 
 /* what we do*/
+@media screen and (max-width: 480px) {
+  .whatwedo {
+    display: none;
+  }
+}
+
 .whatwedo__list {
   display: flex;
 }
@@ -375,10 +381,11 @@ p {
 }
 
 .ourteam__list {
-  display: flex;
+  text-align: center;
 }
 
 .ourteam__item {
+  display: inline-block;
   margin-right: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -400,7 +407,6 @@ p {
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
-  text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: #212121;
@@ -412,7 +418,6 @@ p {
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
@@ -425,16 +430,13 @@ p {
 
 .ourclients__list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ourclients__item {
   width: 170px;
   height: 92px;
-  margin-right: 30px;
-}
-
-.ourclients__item:last-child {
-  margin-right: 0px;
 }
 
 .ourclients__link {
@@ -726,24 +728,9 @@ p {
   color: #ffffff;
 }
 
-.footer-box {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.footer__wraper {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer__title {
   color: white;
   margin-bottom: 20px;
-}
-
-.subscribe__form {
-  display: flex;
 }
 
 .subscribe__input {

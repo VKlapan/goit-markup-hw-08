@@ -8,10 +8,11 @@
 
 .ourteam__list {
   @extend %list;
-  display: flex;
+  text-align: center;
 }
 
 .ourteam__item {
+  display: inline-block;
   margin-right: 30px;
   background-color: #ffffff;
 
@@ -36,7 +37,6 @@
   line-height: 19px;
   /* identical to box height */
 
-  text-align: center;
   letter-spacing: 0.03em;
 
   margin-bottom: 10px;
@@ -51,7 +51,6 @@
   line-height: 1.19;
   /* identical to box height */
 
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--main-color);
