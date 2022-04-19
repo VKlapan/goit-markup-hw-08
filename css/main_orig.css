@@ -158,19 +158,6 @@ p {
   color: #000000;
 }
 
-.header__wrap {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 456px) {
-  .header__wrap {
-    display: none;
-  }
-}
-
 .header__list {
   display: flex;
   padding: 0px;
@@ -991,4 +978,4 @@ p {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main_orig.css.map */
