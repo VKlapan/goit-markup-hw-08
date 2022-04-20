@@ -7,8 +7,13 @@
   background-color: var(--section-background-color);
 }
 
-.footer__block--first {
-  margin-right: 70px;
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  margin-bottom: 60px;
 }
 
 .footer__list {
@@ -34,6 +39,7 @@
 }
 
 .footer-box {
+  text-align: center;
 }
 
 .footer__wraper {

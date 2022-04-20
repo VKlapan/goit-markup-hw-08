@@ -164,7 +164,7 @@ p {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1480px) {
   .header__wrap {
     display: none;
   }
@@ -233,10 +233,9 @@ p {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  /* or 136% */
-  width: 100%;
+  font-size: 26px;
+  line-height: 1.62;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -333,7 +332,7 @@ p {
 }
 
 /* what we do*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1480px) {
   .whatwedo {
     display: none;
   }
@@ -375,28 +374,33 @@ p {
 
 /* our team*/
 .ourteam {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
 .ourteam__list {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ourteam__item {
   display: inline-block;
-  margin-right: 30px;
   background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.ourteam__item:last-child {
-  margin-right: 0px;
-}
-
 .ourteam__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -424,8 +428,8 @@ p {
 
 /*Our clients*/
 .ourclients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .ourclients__list {
@@ -708,8 +712,12 @@ p {
   background-color: var(--section-background-color);
 }
 
-.footer__block--first {
-  margin-right: 70px;
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
 }
 
 .footer__item:not(:last-child) {
@@ -728,17 +736,31 @@ p {
   color: #ffffff;
 }
 
+.footer-box {
+  text-align: center;
+}
+
 .footer__title {
   color: white;
   margin-bottom: 20px;
 }
 
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .subscribe__input {
   display: block;
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
   outline: none;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
