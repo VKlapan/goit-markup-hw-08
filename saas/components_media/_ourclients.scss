@@ -10,11 +10,32 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: -15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 756px) {
+    max-width: 756px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+  }
 }
 
 .ourclients__item {
-  width: 170px;
+  flex-basis: 210px;
   height: 92px;
+  margin: 15px;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 170px;
+  }
 }
 
 .ourclients__link {

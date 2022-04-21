@@ -55,7 +55,6 @@ p {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -436,11 +435,40 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: -15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .ourclients__list {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .ourclients__list {
+    max-width: 756px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ourclients__list {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+  }
 }
 
 .ourclients__item {
-  width: 170px;
+  flex-basis: 210px;
   height: 92px;
+  margin: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .ourclients__item {
+    flex-basis: 170px;
+  }
 }
 
 .ourclients__link {
@@ -753,7 +781,6 @@ p {
 }
 
 .subscribe__input {
-  display: block;
   width: 100%;
   max-width: 450px;
   height: 50px;
