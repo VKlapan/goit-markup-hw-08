@@ -4,9 +4,13 @@
   position: relative;
 
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 17px;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 25px;
+  }
 }
 
 .header-container {
@@ -16,7 +20,6 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -54,6 +57,9 @@
 
 .header__wrap {
   display: flex;
+  justify-content: space-between;
+
+  width: 100%;
 
   @media screen and (max-width: 767px) {
     position: absolute;
@@ -63,7 +69,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
 
     padding: 48px 40px;
 
@@ -72,6 +78,7 @@
 
   @media screen and (min-width: 768px) {
     align-items: center;
+    margin-left: 80px;
   }
 }
 
@@ -81,7 +88,6 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-right: 84px;
   }
 }
 
@@ -89,8 +95,13 @@
   @extend %list;
   padding: 0px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 }
 
@@ -104,13 +115,16 @@
   }
 }
 .header__item-contacts {
-  position: relative;
+  &:last-child {
+    order: -1;
+    margin-bottom: 12px;
+  }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 50px;
+    margin-bottom: 0px;
 
     &:last-child {
-      margin-right: 0px;
+      margin-right: 50px;
     }
   }
 }
@@ -127,17 +141,18 @@
     fill: var(--nav-hover-color);
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .header__link {
   @extend %link;
+  display: flex;
   align-items: center;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
@@ -152,5 +167,21 @@
   &:focus,
   &:active {
     color: var(--nav-hover-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    &[href="mailto:info@devstudio.com"] {
+      font-size: 24px;
+      line-height: 1.67;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
