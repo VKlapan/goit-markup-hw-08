@@ -1,6 +1,8 @@
 /* header */
 
 .header {
+  position: relative;
+
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: #ffffff;
@@ -8,15 +10,22 @@
 }
 
 .header-container {
-  display: flex;
   align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .link--top-logo {
   @extend %link;
-  margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .link--bottom-logo {
@@ -28,8 +37,12 @@
 .logo__text {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   color: #2196f3;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 
   &--white {
     color: #ffffff;
@@ -41,30 +54,64 @@
 
 .header__wrap {
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
 
-@media screen and (max-width: 1480px) {
-  .header__wrap {
-    display: none;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 95vh;
+
+    padding: 48px 40px;
+
+    background-color: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
   }
 }
 
-.header__list {
+.header__list-nav {
   @extend %list;
-  display: flex;
   padding: 0px;
-  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 84px;
+  }
 }
 
-.header__item {
+.header__list-contacts {
+  @extend %list;
+  padding: 0px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.header__item-nav {
   position: relative;
+
   margin-right: 50px;
 
   &:last-child {
     margin-right: 0px;
+  }
+}
+.header__item-contacts {
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -79,11 +126,14 @@
   .header__link:focus & {
     fill: var(--nav-hover-color);
   }
+
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
 }
 
 .header__link {
   @extend %link;
-  display: flex;
   align-items: center;
 
   font-weight: 500;
