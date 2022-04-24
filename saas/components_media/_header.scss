@@ -61,6 +61,8 @@
 
   width: 100%;
 
+  z-index: 1;
+
   @media screen and (max-width: 767px) {
     position: fixed;
     top: 0;
@@ -92,11 +94,13 @@
 .mobile-menu__btn {
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: 20px;
 
   width: 40px;
   height: 40px;
   padding: 0;
+
+  z-index: 1;
 
   box-sizing: border-box;
 

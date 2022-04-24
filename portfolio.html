@@ -31,46 +31,60 @@
           ><span class="logo__text">Web</span
           ><span class="logo__text logo__text--black">Studio</span></a
         >
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="./index.html">Студия</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link current" href="./portfolio.html"
-                >Портфолио</a
+        <div class="header__wrap" data-menu>
+          <nav class="header__nav">
+            <ul class="header__list-nav">
+              <li class="header__item-nav">
+                <a class="header__link" href="./index.html">Студия</a>
+              </li>
+              <li class="header__item-nav">
+                <a class="header__link current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__item-nav">
+                <a class="header__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!--contacts-->
+          <ul class="header__list-contacts">
+            <li class="header__item-contacts">
+              <a
+                class="header__link header__link--main-color"
+                href="tel:+380961111111"
+              >
+                <svg class="header__logo">
+                  <use href="./images/sprite_opt.svg#icon-telephone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="header__item">
-              <a class="header__link" href="">Контакты</a>
+            <li class="header__item-contacts">
+              <a
+                class="header__link header__link--main-color"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="header__logo">
+                  <use href="./images/sprite_opt.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
           </ul>
-        </nav>
-        <!--contacts-->
-        <ul class="header__list">
-          <li class="header__item">
-            <a
-              class="header__link header__link--main-color"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="header__logo">
-                <use href="./images/sprite_opt.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__item">
-            <a
-              class="header__link header__link--main-color"
-              href="tel:+380961111111"
-            >
-              <svg class="header__logo">
-                <use href="./images/sprite_opt.svg#icon-telephone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button type="button" class="mobile-menu__btn" data-menu-button>
+          <svg class="mobile-menu__img">
+            <use
+              class="mobile-menu__img--open"
+              href="images/sprite_opt.svg#mobile-menu-open"
+            ></use>
+            <use
+              class="mobile-menu__img--close"
+              href="images/sprite_opt.svg#mobile-menu-close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -412,5 +426,8 @@
         </div>
       </div>
     </footer>
+    <!-- Scrip for mobile menu-->
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
