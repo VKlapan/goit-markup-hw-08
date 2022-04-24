@@ -31,12 +31,7 @@
           ><span class="logo__text">Web</span
           ><span class="logo__text logo__text--black">Studio</span></a
         >
-        <div class="header__wrap">
-          <button type="button" class="menu__btn">
-            <svg class="menu__img">
-              <use href="images/sprite_opt.svg#btn-close"></use>
-            </svg>
-          </button>
+        <div class="header__wrap" data-menu>
           <nav class="header__nav">
             <ul class="header__list-nav">
               <li class="header__item-nav">
@@ -76,6 +71,18 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="mobile-menu__btn" data-menu-button>
+          <svg class="mobile-menu__img">
+            <use
+              class="mobile-menu__img--open"
+              href="images/sprite_opt.svg#mobile-menu-open"
+            ></use>
+            <use
+              class="mobile-menu__img--close"
+              href="images/sprite_opt.svg#mobile-menu-close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -575,6 +582,7 @@
     </div>
     <!-- Scrip for modal window-->
 
-    <script src="./js/modal.js  "></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
