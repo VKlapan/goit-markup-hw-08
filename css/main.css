@@ -1297,7 +1297,6 @@ p {
 }
 
 .modal__title {
-  margin-top: 40px;
   margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -1329,6 +1328,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  margin-bottom: 30px;
 }
 
 .form__text {
@@ -1344,8 +1344,16 @@ p {
 }
 
 .form__text--agreement {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__text--agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__link {
