@@ -3,8 +3,13 @@
 .menu__list {
   @extend %list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .menu__item:not(:last-child) {
