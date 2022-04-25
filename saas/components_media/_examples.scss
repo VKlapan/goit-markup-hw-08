@@ -1,14 +1,26 @@
 /*portfolio examples */
 
+.portfolio-galery-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 .examples__list {
   @extend %list;
   display: flex;
+  max-width: 400px;
   flex-wrap: wrap;
-  row-gap: 30px;
-  column-gap: 30px;
   justify-content: center;
+  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    justify-content: start;
+  }
 }
 .examples__item {
+  margin: 15px;
   background-color: #ffffff;
 }
 
@@ -63,6 +75,8 @@
 }
 
 .examples__box {
+  width: 300px;
+
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
