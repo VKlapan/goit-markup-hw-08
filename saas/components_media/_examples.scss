@@ -9,14 +9,14 @@
 .examples__list {
   @extend %list;
   display: flex;
-  max-width: 400px;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   margin: -15px;
 
-  @media screen and (min-width: 768px) {
-    max-width: 100%;
-    justify-content: start;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    justify-content: space-between;
   }
 }
 .examples__item {
