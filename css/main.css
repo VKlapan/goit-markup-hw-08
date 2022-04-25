@@ -1128,6 +1128,10 @@ p {
   margin-bottom: 60px;
 }
 
+.footer__block--last {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .footer__block {
     align-items: flex-start;

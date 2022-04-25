@@ -38,6 +38,10 @@
 
   margin-bottom: 60px;
 
+  &--last {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
   }
