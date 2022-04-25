@@ -9,22 +9,22 @@
   --section-background-color: #2f303a;
 }
 
-.socials__list, .header__list-nav, .header__list-contacts, .whywe__list, .whatwedo__list, .ourteam__list, .ourclients__list, .menu__list, .examples__list, .footer__list {
+.socials__list, .header__list-nav, .header__list-contacts, .header__list-socials, .whywe__list, .whatwedo__list, .ourteam__list, .ourclients__list, .menu__list, .examples__list, .footer__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.link--top-logo, .link--bottom-logo, .header__link, .examples__link, .footer__link {
+.link--top-logo, .link--bottom-logo, .header__link, .header__link-socials, .examples__link, .footer__link {
   text-decoration: none;
 }
 
-.current.link--top-logo, .current.link--bottom-logo, .current.header__link, .current.examples__link, .current.footer__link {
+.current.link--top-logo, .current.link--bottom-logo, .current.header__link, .current.header__link-socials, .current.examples__link, .current.footer__link {
   color: var(--nav-hover-color);
 }
 
 @media screen and (min-width: 768px) {
-  .current.link--top-logo::after, .current.link--bottom-logo::after, .current.header__link::after, .current.examples__link::after, .current.footer__link::after {
+  .current.link--top-logo::after, .current.link--bottom-logo::after, .current.header__link::after, .current.header__link-socials::after, .current.examples__link::after, .current.footer__link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -198,7 +198,7 @@ p {
     top: 0;
     left: 0;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 100vh;
     padding: 48px 40px;
@@ -381,6 +381,38 @@ p {
   .header__link {
     font-size: 14px;
   }
+}
+
+.header__list-socials {
+  margin: -10px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .header__list-socials {
+    display: none;
+  }
+}
+
+.header__item-socials {
+  box-sizing: border-box;
+  margin: 10px 0 10px 10px;
+}
+
+.header__item-socials:not(:last-child) {
+  padding-right: 10px;
+  border-right: solid 1px rgba(33, 33, 33, 0.2);
+}
+
+.header__link-socials {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  /* identical to box height, or 122% */
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 /* hero */
