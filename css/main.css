@@ -1236,15 +1236,15 @@ p {
   visibility: visible;
   pointer-events: initial;
   transition: opacity 250ms, visibility 250ms;
+  overflow-y: scroll;
 }
 
 .modal__window {
-  position: absolute;
-  top: 93px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100vw - 30px);
-  padding: 0 40px;
+  position: relative;
+  padding: 40px;
+  margin-top: 93px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
 }
 
@@ -1259,6 +1259,7 @@ p {
   .modal__window {
     width: 528px;
     height: 581px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
