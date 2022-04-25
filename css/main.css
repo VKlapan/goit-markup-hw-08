@@ -1224,6 +1224,7 @@ p {
 
 /* Modal window */
 .backdrop {
+  z-index: 10;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -1239,13 +1240,29 @@ p {
 
 .modal__window {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  transform: translateX(-50%);
+  width: calc(100vw - 30px);
   padding: 0 40px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .modal__window {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__window {
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .modal__btn {
