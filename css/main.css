@@ -591,6 +591,7 @@ p {
 
 .whatwedo__list {
   display: flex;
+  justify-content: center;
 }
 
 .whatwedo__item {

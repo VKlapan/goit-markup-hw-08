@@ -9,6 +9,7 @@
 .whatwedo__list {
   @extend %list;
   display: flex;
+  justify-content: center;
 }
 
 .whatwedo__item {
