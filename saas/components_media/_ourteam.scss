@@ -12,9 +12,7 @@
   flex-wrap: wrap;
   margin: -15px;
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -38,11 +36,11 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
-    flex-basis: 354px;
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: 270px;
+    width: 270px;
   }
 }
 

@@ -18,10 +18,21 @@
     width: 768px;
     justify-content: space-between;
   }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .examples__item {
   margin: 15px;
   background-color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .examples__wrap {
@@ -75,7 +86,7 @@
 }
 
 .examples__box {
-  width: 300px;
+  width: 100%;
 
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
