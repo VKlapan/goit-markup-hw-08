@@ -69,7 +69,7 @@
     left: 0;
 
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 100vh;
 
@@ -159,6 +159,10 @@
   @extend %list;
   padding: 0px;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 63px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -188,9 +192,18 @@
 }
 
 .header__item-contacts {
+  margin-bottom: 32px;
+
   &:last-child {
-    order: -1;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    &:last-child {
+      order: -1;
+      margin-bottom: 12px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
