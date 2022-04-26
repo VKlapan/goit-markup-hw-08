@@ -1,12 +1,19 @@
 /* hero */
+$gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
 .hero {
   padding: 200px 0px;
   max-width: 1600px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero_bg_Img.png);
+
+  background-image: $gradient, url(../images/hero_480-min.png);
+
+  @media screen and (min-width: 768px) {
+    background-image: $gradient, url(../images/hero_768-min.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: $gradient, url(../images/hero_1200-min.png);
+  }
 
   background-repeat: no-repeat;
   background-position: center;

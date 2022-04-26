@@ -59,12 +59,19 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1200px;
   }
 }
 
@@ -419,10 +426,22 @@ p {
 .hero {
   padding: 200px 0px;
   max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_Img.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_480-min.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_768-min.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_1200-min.png);
+  }
 }
 
 .hero-container {
@@ -480,8 +499,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -635,8 +652,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -1100,8 +1115,6 @@ p {
 .footer-box {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 @media screen and (min-width: 1200px) {
