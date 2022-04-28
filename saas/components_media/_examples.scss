@@ -1,28 +1,18 @@
 /*portfolio examples */
 
-.portfolio-galery-wrap {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
 .examples__list {
   @extend %list;
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   margin: -15px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 768px;
     justify-content: space-between;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
   }
 }
 .examples__item {
+  width: 100%;
   margin: 15px;
   background-color: #ffffff;
 

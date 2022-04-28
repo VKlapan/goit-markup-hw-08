@@ -1,8 +1,6 @@
 /* header */
 
 .header {
-  position: relative;
-
   padding-top: 24px;
   padding-bottom: 17px;
   background-color: #ffffff;
@@ -14,6 +12,8 @@
 }
 
 .header-container {
+  position: relative;
+
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -94,7 +94,7 @@
 .mobile-menu__btn {
   position: absolute;
   right: 15px;
-  top: 20px;
+  top: 0;
 
   width: 40px;
   height: 40px;
@@ -111,10 +111,6 @@
 
   &:hover .mobile-menu__img {
     fill: #2196f3;
-  }
-
-  &.is-active {
-    position: fixed;
   }
 
   @media screen and (min-width: 768px) {
